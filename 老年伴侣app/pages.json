@@ -5,7 +5,8 @@
       "style": {
         "navigationBarTitleText": "老年伴侣",
         "navigationBarHidden": true,
-        "backgroundColor": "#f8f8f8"
+        "backgroundColor": "#f8f8f8",
+        "disableScroll": true
       }
     },
     {
@@ -33,27 +34,22 @@
       }
     },
     {
-      "path": "pages/notifications/notifications",
+      "path": "pages/medicine/medicine",
       "style": {
-        "navigationBarTitleText": "报警记录",
+        "navigationBarTitleText": "用药管理",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false
       }
     },
     {
       "path": "pages/videoDetail/videoDetail",
       "style": {
         "navigationBarTitleText": "实时画面",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
-      }
-    },
-    {
-      "path": "pages/medicine/medicine",
-      "style": {
-        "navigationBarTitleText": "用药管理",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
+        "navigationBarBackgroundColor": "#000",
+        "navigationBarTextStyle": "white",
+        "backgroundColor": "#000",
+        "enablePullDownRefresh": false
       }
     },
     {
@@ -61,7 +57,8 @@
       "style": {
         "navigationBarTitleText": "位置详情",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false
       }
     },
     {
@@ -69,7 +66,17 @@
       "style": {
         "navigationBarTitleText": "家庭相册",
         "navigationBarBackgroundColor": "#fff",
-        "navigationBarTextStyle": "black"
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/notifications/notifications",
+      "style": {
+        "navigationBarTitleText": "报警记录",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTextStyle": "black",
+        "enablePullDownRefresh": false
       }
     },
     {
@@ -79,48 +86,23 @@
         "navigationBarBackgroundColor": "#fff",
         "navigationBarTextStyle": "black"
       }
-	},
-	{
-		"path": "pages/medicine/medicine",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/videoDetail/videoDetail",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/location/location",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/album/album",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	},
-	{
-		"path": "pages/notifications/notifications",
-		"style": {
-			"navigationBarTitleText": ""
-		}
-	}
+    }
   ],
   "globalStyle": {
     "navigationBarTextStyle": "black",
     "navigationBarBackgroundColor": "#fff",
-    "backgroundColor": "#f5f5f5"
+    "backgroundColor": "#f5f5f5",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 50
   },
   "tabBar": {
     "color": "#666",
     "selectedColor": "#3b82f6",
     "backgroundColor": "#fff",
     "borderStyle": "black",
+    "height": 80,
+    "fontSize": 24,
+    "iconWidth": 40,
     "list": [
       {
         "pagePath": "pages/device/device",
@@ -147,5 +129,15 @@
         "selectedIconPath": "static/icon/mine-active.png"
       }
     ]
+  },
+  "condition": {
+    "current": -1,
+    "list": []
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
   }
 }
