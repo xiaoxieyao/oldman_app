@@ -1,0 +1,156 @@
+{
+  "pages": [
+    {
+      "path": "pages/auth/auth",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/device/device",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/health/health",
+      "style": {
+        "navigationBarTitleText": "健康数据",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/interact/interact",
+      "style": {
+        "navigationBarTitleText": "亲情互动",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/notifications/notifications",
+      "style": {
+        "navigationBarTitleText": "消息通知",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/mine/mine",
+      "style": {
+        "navigationBarTitleText": "我的",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/location/location",
+      "style": {
+        "navigationBarTitleText": "位置查看",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/video-detail/video-detail",
+      "style": {
+        "navigationBarTitleText": "实时画面",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/medicine/medicine",
+      "style": {
+        "navigationBarTitleText": "用药管理",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/device-manage/device-manage",
+      "style": {
+        "navigationBarTitleText": "设备管理",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/setting/setting",
+      "style": {
+        "navigationBarTitleText": "设置",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    },
+    {
+      "path": "pages/medicine/add-medicine",
+      "style": {
+        "navigationBarTitleText": "添加用药记录",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc",
+        "enablePullDownRefresh": false
+      }
+    },
+    {
+      "path": "pages/community/community",
+      "style": {
+        "navigationBarTitleText": "社区活动",
+        "navigationBarHidden": true,
+        "backgroundColor": "#f8fafc"
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "老年守护中心",
+    "navigationBarBackgroundColor": "#ffffff",
+    "backgroundColor": "#f8fafc",
+    "navigationBarShadow": "none",
+    "backgroundTextStyle": "light"
+  },
+  "tabBar": {
+    "custom": true,
+    "color": "#94a3b8",
+    "selectedColor": "#3b82f6",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "none",
+    "list": [
+      {
+        "pagePath": "pages/device/device",
+        "text": "首页",
+        "iconPath": "static/tabbar/home.png",
+        "selectedIconPath": "static/tabbar/home-active.png"
+      },
+      {
+        "pagePath": "pages/health/health",
+        "text": "健康",
+        "iconPath": "static/tabbar/health.png",
+        "selectedIconPath": "static/tabbar/health-active.png"
+      },
+      {
+        "pagePath": "pages/interact/interact",
+        "text": "亲情",
+        "iconPath": "static/tabbar/family.png",
+        "selectedIconPath": "static/tabbar/family-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "static/tabbar/mine.png",
+        "selectedIconPath": "static/tabbar/mine-active.png"
+      }
+    ]
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^custom-(.*)": "@/components/custom-$1/custom-$1.vue"
+    }
+  }
+}

@@ -1,0 +1,310 @@
+
+/* 基础样式 - 复制首页page-device，仅修改类名，保证布局一致 */
+.page-location[data-v-4d9b4fcb] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* 状态栏占位 - 直接复制首页原样式，渐变背景完全一致 */
+.status-bar-placeholder[data-v-4d9b4fcb] {
+  height: var(--status-bar-height);
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  flex-shrink: 0;
+}
+
+/* 顶部导航栏 - 完全复制首页page-header样式，仅调整按钮布局 */
+.page-header[data-v-4d9b4fcb] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+/* 导航栏滚动阴影 - 和首页完全一致 */
+.header-scroll[data-v-4d9b4fcb] {
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0.0625rem 0.3125rem rgba(59, 130, 246, 0.2);
+}
+/* 导航按钮 - 复制首页header-btn样式，圆形半透背景 */
+.header-btn[data-v-4d9b4fcb] {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* 按钮图标 - 和首页字体大小/颜色一致 */
+.back-icon[data-v-4d9b4fcb], .nav-icon[data-v-4d9b4fcb] {
+  font-size: 0.875rem;
+  color: #fff;
+}
+/* 导航标题 - 复制首页header-title样式，字体/大小/间距一致 */
+.header-title[data-v-4d9b4fcb] {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+
+/* 内容滚动区 - 直接复制首页content-scroll原样式，无任何修改 */
+.content-scroll[data-v-4d9b4fcb] {
+  overflow-y: auto;
+  padding: 0.625rem 0.5rem 0.625rem 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+  flex: none;
+  background-color: #f8fafc;
+}
+.content-scroll[data-v-4d9b4fcb]::-webkit-scrollbar {
+  display: none;
+}
+
+/* 地图卡片 - 首页同款白色卡片样式：圆角32rpx/阴影/边框/间距 */
+.map-card[data-v-4d9b4fcb] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: all 0.2s ease;
+}
+/* 点击动画 - 和首页env-card/function-item一致 */
+.map-card.item-active[data-v-4d9b4fcb] {
+  transform: scale(0.98);
+}
+/* 卡片头部 - 复用首页视频/环境卡片头部布局 */
+.map-card-header[data-v-4d9b4fcb] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+/* 卡片标题 - 统一复用首页card-title样式，字体/颜色/大小一致 */
+.card-title[data-v-4d9b4fcb] {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #334155;
+}
+/* 地图状态标签 - 复用首页安全标签样式规范 */
+.map-status[data-v-4d9b4fcb] {
+  font-size: 0.6875rem;
+  color: #22c55e;
+  font-weight: 500;
+}
+.status-normal[data-v-4d9b4fcb] {
+  color: #3b82f6;
+}
+/* 地图容器 - 复用首页video-container样式，16:9占位比+圆角24rpx */
+.map-container[data-v-4d9b4fcb] {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: #e2e8f0;
+  border-radius: 0.75rem;
+  overflow: hidden;
+}
+.map-placeholder[data-v-4d9b4fcb] {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+/* 地图加载提示 - 居中布局，和首页加载提示样式一致 */
+.map-loading[data-v-4d9b4fcb] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loading-text[data-v-4d9b4fcb] {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+/* 当前位置信息卡片 - 首页同款白色卡片样式，间距28rpx */
+.location-info-card[data-v-4d9b4fcb] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* 卡片头部 - 左右布局，和地图卡片一致 */
+.location-info-card .card-header[data-v-4d9b4fcb] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+/* 安全标签 - 直接复制首页safe-tag原样式，无修改 */
+.safe-tag[data-v-4d9b4fcb] {
+  background-color: #dcfce7;
+  color: #22c55e;
+  padding: 0.125rem 0.375rem;
+  border-radius: 0.375rem;
+  font-size: 0.625rem;
+}
+/* 信息列表 - 纵向布局，复用首页环境卡片信息项间距 */
+.info-list[data-v-4d9b4fcb] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0 0.25rem;
+}
+/* 信息项 - 左右两端对齐，复用首页健康提醒/环境卡片布局 */
+.info-item[data-v-4d9b4fcb] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #f1f5f9;
+}
+.info-item[data-v-4d9b4fcb]:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+/* 信息标签 - 复制首页env-item-label/info-label样式，颜色/大小一致 */
+.info-label[data-v-4d9b4fcb] {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  min-width: 3.75rem;
+}
+/* 信息值 - 复制首页info-value样式，对齐方式优化 */
+.info-value[data-v-4d9b4fcb] {
+  font-size: 0.8125rem;
+  color: #334155;
+  text-align: right;
+  flex: 1;
+}
+/* 高精度文字 - 绿色强调，和首页环境卡片提示色一致 */
+.precision-high[data-v-4d9b4fcb] {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+/* 位置历史卡片 - 首页同款白色卡片，底部间距和首页一致 */
+.location-history-card[data-v-4d9b4fcb] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* 历史卡片头部 - 复用首页health-tip-header布局 */
+.location-history-card .card-header[data-v-4d9b4fcb] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+/* 历史数量 - 复制首页tip-count样式，颜色/大小一致 */
+.history-count[data-v-4d9b4fcb] {
+  font-size: 0.6875rem;
+  color: #3b82f6;
+  font-weight: 600;
+}
+/* 历史列表 - 纵向布局，复用首页function-grid/history-list间距 */
+.history-list[data-v-4d9b4fcb] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 0 0.25rem;
+}
+/* 历史项 - 复用首页tip-item布局，图标+内容 */
+.history-item[data-v-4d9b4fcb] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem;
+  background-color: #faf5ff;
+  border-radius: 0.75rem;
+  border: 1px solid #f3e8ff;
+  transition: all 0.2s ease;
+}
+.history-item[data-v-4d9b4fcb]:active {
+  transform: scale(0.98);
+}
+/* 历史图标盒子 - 复用首页function-icon-box样式，圆形80rpx */
+.history-icon-box[data-v-4d9b4fcb] {
+  font-size: 1rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+/* 历史内容 - 纵向布局，复用首页tip-content样式 */
+.history-content[data-v-4d9b4fcb] {
+  flex: 1;
+}
+.history-place[data-v-4d9b4fcb] {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #334155;
+  display: block;
+  margin-bottom: 0.1875rem;
+}
+.history-time[data-v-4d9b4fcb] {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  display: block;
+}
+
+/* 间距类 - 直接复制首页mb-20原样式 */
+.mb-20[data-v-4d9b4fcb] {
+  margin-bottom: 0.625rem;
+}
+
+/* 颜色背景类 - 直接复制首页所有icon-bg样式，保证图标配色一致 */
+.blue-bg[data-v-4d9b4fcb] { background-color: #eff6ff; color: #3b82f6;
+}
+.green-bg[data-v-4d9b4fcb] { background-color: #f0fdf4; color: #22c55e;
+}
+.amber-bg[data-v-4d9b4fcb] { background-color: #fffbeb; color: #f59e0b;
+}
+.red-bg[data-v-4d9b4fcb] { background-color: #fee2e2; color: #dc2626;
+}
+.purple-bg[data-v-4d9b4fcb] { background-color: #faf5ff; color: #8b5cf6;
+}
+.teal-bg[data-v-4d9b4fcb] { background-color: #ccfbf1; color: #14b8a6;
+}
+.pink-bg[data-v-4d9b4fcb] { background-color: #fdf2f8; color: #ec4899;
+}
+
+/* 全局按钮重置 - 直接复制首页原样式，清除uni-app默认按钮样式 */
+uni-button[data-v-4d9b4fcb] {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+uni-button[data-v-4d9b4fcb]::after {
+  border: none !important;
+}

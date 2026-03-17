@@ -1,0 +1,270 @@
+
+/* 基础样式 - 遵循项目统一规范，仅修改类名 */
+.page-community[data-v-a6ef5318] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* 状态栏占位 - 项目完全统一的渐变背景 */
+.status-bar-placeholder[data-v-a6ef5318] {
+  height: var(--status-bar-height);
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  flex-shrink: 0;
+}
+
+/* 顶部导航栏 - 项目完全统一的样式，渐变+滚动变化 */
+.page-header[data-v-a6ef5318] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+.header-scroll[data-v-a6ef5318] {
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0.0625rem 0.3125rem rgba(59, 130, 246, 0.2);
+}
+.header-title[data-v-a6ef5318] {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+}
+.header-placeholder[data-v-a6ef5318] {
+  width: 1.875rem; /* 占位保持对称，项目统一 */
+}
+
+/* 内容滚动区 - 项目完全统一的样式，无差异 */
+.content-scroll[data-v-a6ef5318] {
+  overflow-y: auto;
+  padding: 0.625rem 0.5rem 0.625rem 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+  flex: none;
+  background-color: #f8fafc;
+}
+.content-scroll[data-v-a6ef5318]::-webkit-scrollbar {
+  display: none;
+}
+
+/* 搜索栏 - 简约设计，贴合老年用户操作习惯 */
+.search-bar[data-v-a6ef5318] {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.search-input[data-v-a6ef5318] {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.9375rem;
+  background: #fff;
+  border-radius: 1rem;
+  border: 0.03125rem solid #f1f5f9;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+}
+.search-icon[data-v-a6ef5318] {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+.search-placeholder[data-v-a6ef5318] {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  flex: 1;
+}
+
+/* 活动分类标签 - 横向滚动，选中高亮 */
+.category-tab[data-v-a6ef5318] {
+  width: 100%;
+  margin-bottom: 0.75rem;
+}
+.tab-scroll[data-v-a6ef5318] {
+  width: 100%;
+  white-space: nowrap;
+}
+.tab-list[data-v-a6ef5318] {
+  display: flex;
+  gap: 0.625rem;
+  padding: 0 0.25rem;
+}
+.tab-item[data-v-a6ef5318] {
+  padding: 0.5rem 0.875rem;
+  background: #fff;
+  border-radius: 0.75rem;
+  border: 0.03125rem solid #f1f5f9;
+  box-shadow: 0 0.0625rem 0.25rem rgba(0, 0, 0, 0.03);
+  transition: all 0.2s ease;
+}
+.tab-active[data-v-a6ef5318] {
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  border: none;
+}
+.tab-text[data-v-a6ef5318] {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: #334155;
+}
+.tab-active .tab-text[data-v-a6ef5318] {
+  color: #fff;
+}
+
+/* 活动列表 - 项目统一的卡片间距（28rpx） */
+.activity-list[data-v-a6ef5318] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+  margin-bottom: 0.625rem;
+}
+/* 活动项 - 卡片式设计，项目统一的圆角/阴影/边框 */
+.activity-item[data-v-a6ef5318] {
+  background: #fff;
+  border-radius: 1rem;
+  border: 0.03125rem solid #f1f5f9;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+.activity-item.item-active[data-v-a6ef5318] {
+  transform: scale(0.98);
+}
+/* 活动封面图容器 */
+.activity-img-box[data-v-a6ef5318] {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+}
+.activity-img[data-v-a6ef5318] {
+  width: 100%;
+  height: 100%;
+}
+/* 活动标签 */
+.activity-tag[data-v-a6ef5318] {
+  position: absolute;
+  top: 0.625rem;
+  left: 0.625rem;
+  padding: 0.1875rem 0.5rem;
+  background: #f59e0b;
+  color: #fff;
+  font-size: 0.625rem;
+  font-weight: 600;
+  border-radius: 0.375rem;
+}
+.activity-tag[text="公益"][data-v-a6ef5318] {
+  background: #14b8a6;
+}
+.activity-tag[text="新上线"][data-v-a6ef5318] {
+  background: #ec4899;
+}
+/* 活动信息区 */
+.activity-info[data-v-a6ef5318] {
+  padding: 0.875rem 0.9375rem;
+}
+/* 活动标题 */
+.activity-title[data-v-a6ef5318] {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #334155;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+}
+/* 活动元信息（时间+地址） */
+.activity-meta[data-v-a6ef5318] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+.meta-item[data-v-a6ef5318] {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.meta-icon[data-v-a6ef5318] {
+  font-size: 0.75rem;
+  color: #3b82f6;
+  width: 0.75rem;
+  text-align: center;
+}
+.meta-text[data-v-a6ef5318] {
+  font-size: 0.75rem;
+  color: #64748b;
+}
+/* 活动额外信息（报名人数+报名按钮） */
+.activity-extra[data-v-a6ef5318] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.join-info[data-v-a6ef5318] {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.join-icon[data-v-a6ef5318] {
+  font-size: 0.75rem;
+  color: #8b5cf6;
+}
+.join-text[data-v-a6ef5318] {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+}
+/* 报名按钮 - 项目统一主色，圆角规范 */
+.join-btn[data-v-a6ef5318] {
+  padding: 0.375rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  color: #fff;
+  border: none;
+  border-radius: 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.join-btn[data-v-a6ef5318]::after {
+  border: none !important;
+}
+
+/* 空数据占位 - 友好提示，贴合项目风格 */
+.empty-box[data-v-a6ef5318] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.125rem 0;
+  gap: 0.625rem;
+}
+.empty-icon[data-v-a6ef5318] {
+  font-size: 2.5rem;
+  color: #e2e8f0;
+}
+.empty-text[data-v-a6ef5318] {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+/* 全局按钮重置 - 项目完全统一的样式，清除uni-app默认样式 */
+uni-button[data-v-a6ef5318] {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+uni-button[data-v-a6ef5318]::after {
+  border: none !important;
+}

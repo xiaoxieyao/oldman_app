@@ -1,0 +1,175 @@
+
+/* 基础样式 - 完全复用首页page-device的样式规范，仅修改类名 */
+.page-setting[data-v-018cdf56] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* 状态栏占位 - 和首页完全一致的样式、渐变背景 */
+.status-bar-placeholder[data-v-018cdf56] {
+  height: var(--status-bar-height);
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  flex-shrink: 0;
+}
+
+/* 顶部导航栏 - 完全复用首页的导航样式，渐变背景+滚动变化 */
+.page-header[data-v-018cdf56] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+/* 导航栏滚动变化样式 - 和首页完全一致 */
+.header-scroll[data-v-018cdf56] {
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0.0625rem 0.3125rem rgba(59, 130, 246, 0.2);
+}
+.header-title[data-v-018cdf56] {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+  color: #fff;
+}
+.header-placeholder[data-v-018cdf56] {
+  width: 1.875rem; /* 占位保持导航对称，和首页一致 */
+}
+
+/* 内容滚动区 - 完全复用首页的滚动容器样式，无差异 */
+.content-scroll[data-v-018cdf56] {
+  overflow-y: auto;
+  padding: 0.625rem 0.5rem 0.625rem 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+  flex: none;
+  background-color: #f8fafc;
+}
+.content-scroll[data-v-018cdf56]::-webkit-scrollbar {
+  display: none;
+}
+
+/* 设置卡片 - 复用首页健康/视频/位置卡片的样式：圆角32rpx、阴影、内边距、间距 */
+.setting-card[data-v-018cdf56] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* 卡片头部 - 参考首页健康卡片的子标题样式 */
+.setting-card-header[data-v-018cdf56] {
+  margin-bottom: 0.75rem;
+}
+.setting-card-subtitle[data-v-018cdf56] {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  display: block;
+}
+
+/* 设置列表 - 分割线样式和首页一致 */
+.setting-list[data-v-018cdf56] {
+  width: 100%;
+}
+.divide-y > uni-view[data-v-018cdf56], .divide-y > uni-button[data-v-018cdf56] {
+  border-bottom: 0.03125rem solid #f1f5f9;
+}
+.divide-y > uni-view[data-v-018cdf56]:last-child, .divide-y > uni-button[data-v-018cdf56]:last-child {
+  border-bottom: none;
+}
+
+/* 设置项 - 复用首页快捷操作项的点击样式，布局和首页保持一致 */
+.setting-item[data-v-018cdf56] {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9375rem 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: transparent;
+  border: none;
+}
+/* 禁止点击的项（版本号） */
+.setting-item.no-click[data-v-018cdf56] {
+  pointer-events: none;
+}
+/* 点击激活样式 - 复用首页快捷操作的item-active，视觉一致 */
+.setting-item.item-active[data-v-018cdf56] {
+  background-color: #eff6ff;
+  border-radius: 0.5rem;
+}
+
+/* 设置项左侧（图标+文字） - 布局和首页快捷操作项一致 */
+.setting-item-left[data-v-018cdf56] {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+/* 设置图标 - 大小和颜色参考首页的图标规范 */
+.setting-icon[data-v-018cdf56] {
+  font-size: 0.9375rem;
+  color: #3b82f6;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  text-align: center;
+}
+/* 设置项文字 - 复用首页的文字大小、颜色规范 */
+.setting-item-text[data-v-018cdf56] {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #334155;
+}
+
+/* 设置项右侧箭头 - 简约样式，和首页的箭头视觉统一 */
+.setting-arrow[data-v-018cdf56] {
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+/* 语言项右侧 */
+.setting-item-right[data-v-018cdf56] {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+.language-text[data-v-018cdf56] {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+}
+/* 版本号文字 - 颜色和大小和首页的辅助文字一致 */
+.version-text[data-v-018cdf56] {
+  font-size: 0.8125rem;
+  color: #94a3b8;
+}
+
+/* 通用样式 - 复用首页的mb-20，样式一致 */
+.mb-20[data-v-018cdf56] {
+  margin-bottom: 0.625rem;
+}
+
+/* 全局按钮重置 - 完全复用首页的按钮重置样式，清除uni-app默认样式 */
+uni-button[data-v-018cdf56] {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+uni-button[data-v-018cdf56]::after {
+  border: none !important;
+}

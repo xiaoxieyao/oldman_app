@@ -1,0 +1,305 @@
+
+/* 基础页面样式（完全复制首页page-device，仅修改类名） */
+.page-environment[data-v-225b3afe] {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+/* 状态栏占位（完全复制首页，渐变背景一致） */
+.status-bar-placeholder[data-v-225b3afe] {
+  height: var(--status-bar-height);
+  width: 100%;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  flex-shrink: 0;
+}
+
+/* 顶部导航栏（完全复制首页page-header样式，仅调整按钮布局） */
+.page-header[data-v-225b3afe] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 0.75rem;
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  color: #fff;
+  transition: all 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+  height: 2.75rem;
+  flex-shrink: 0;
+}
+.header-scroll[data-v-225b3afe] {
+  padding: 0.5rem 0.75rem;
+  box-shadow: 0 0.0625rem 0.3125rem rgba(59, 130, 246, 0.2);
+}
+.header-title[data-v-225b3afe] {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.0625rem;
+}
+.header-btn[data-v-225b3afe] {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.back-icon[data-v-225b3afe], .refresh-icon[data-v-225b3afe] {
+  font-size: 0.875rem;
+  color: #fff;
+}
+
+/* 内容滚动区（完全复制首页content-scroll，无任何修改） */
+.content-scroll[data-v-225b3afe] {
+  overflow-y: auto;
+  padding: 0.625rem 0.5rem 0.625rem 0.5rem;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  box-sizing: border-box;
+  flex: none;
+  background-color: #f8fafc;
+}
+.content-scroll[data-v-225b3afe]::-webkit-scrollbar {
+  display: none;
+}
+
+/* 实时环境卡片（完全复制首页env-card样式，仅调整内部间距） */
+.env-card[data-v-225b3afe] {
+  background: linear-gradient(135deg, #3b82f6 0%, #4f46e5 100%);
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  color: #fff;
+  box-shadow: 0 0.25rem 0.75rem rgba(59, 130, 246, 0.2);
+  margin-bottom: 0.875rem;
+  transition: all 0.2s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+.env-card[data-v-225b3afe]:active {
+  transform: scale(0.98);
+}
+.env-card-header[data-v-225b3afe] {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.875rem;
+}
+.env-card-subtitle[data-v-225b3afe] {
+  font-size: 0.75rem;
+  color: #dbeafe;
+  display: block;
+  margin-bottom: 0.125rem;
+}
+.env-card-main-title[data-v-225b3afe] {
+  font-size: 1.125rem;
+  font-weight: bold;
+  display: block;
+}
+.env-card-status[data-v-225b3afe] {
+  background: rgba(74, 222, 128, 0.3);
+  padding: 0.1875rem 0.5rem;
+  border-radius: 0.625rem;
+  font-size: 0.6875rem;
+  font-weight: 500;
+  margin-top: 0.25rem;
+}
+.status-warning[data-v-225b3afe] {
+  background: rgba(251, 146, 60, 0.3);
+}
+.env-card-grid[data-v-225b3afe] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+}
+.env-card-item[data-v-225b3afe] {
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(0.375rem);
+          backdrop-filter: blur(0.375rem);
+  border-radius: 0.75rem;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+}
+.env-item-label[data-v-225b3afe] {
+  font-size: 0.75rem;
+  color: #dbeafe;
+  display: block;
+  margin-bottom: 0.375rem;
+}
+.env-item-value[data-v-225b3afe] {
+  font-size: 1.25rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.env-item-tip[data-v-225b3afe] {
+  font-size: 0.625rem;
+  color: #fef3c7;
+  background: rgba(251, 146, 60, 0.2);
+  padding: 0.0625rem 0.3125rem;
+  border-radius: 0.3125rem;
+}
+
+/* 通用卡片样式（提取首页所有白色卡片共性，统一复用） */
+.common-card[data-v-225b3afe] {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 0.875rem 0.625rem;
+  box-shadow: 0 0.125rem 0.375rem rgba(0, 0, 0, 0.05);
+  border: 1px solid #f1f5f9;
+  margin-bottom: 0.875rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* 通用卡片标题（完全复制首页action-title/health-tip-title样式） */
+.card-title[data-v-225b3afe] {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #334155;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+/* 24小时趋势卡片 */
+.trend-list[data-v-225b3afe] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.trend-item[data-v-225b3afe] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1875rem;
+}
+.trend-item-header[data-v-225b3afe] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.trend-label[data-v-225b3afe] {
+  font-size: 0.625rem;
+  color: #94a3b8;
+}
+.trend-range[data-v-225b3afe] {
+  font-size: 0.625rem;
+  color: #334155;
+}
+/* 进度条（复用首页env-item-tip/安全标签的圆角样式） */
+.progress-bg[data-v-225b3afe] {
+  width: 100%;
+  height: 0.375rem;
+  background-color: #f1f5f9;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.progress-bar[data-v-225b3afe] {
+  height: 100%;
+  border-radius: 0.625rem;
+}
+.temp-progress[data-v-225b3afe] {
+  background-color: #3b82f6;
+}
+.humi-progress[data-v-225b3afe] {
+  background-color: #22c55e;
+}
+
+/* 环境建议卡片 */
+.suggest-list[data-v-225b3afe] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.46875rem;
+}
+.suggest-item[data-v-225b3afe] {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.3125rem;
+}
+.suggest-icon[data-v-225b3afe] {
+  font-size: 0.75rem;
+  margin-top: 0.0625rem;
+}
+.suggest-icon-success[data-v-225b3afe] {
+  color: #10b981;
+}
+.suggest-icon-info[data-v-225b3afe] {
+  color: #3b82f6;
+}
+.suggest-text[data-v-225b3afe] {
+  font-size: 0.75rem;
+  color: #334155;
+  flex: 1;
+}
+
+/* 其他房间卡片 */
+.room-list[data-v-225b3afe] {
+  display: flex;
+  flex-direction: column;
+  gap: 0.46875rem;
+}
+.room-item[data-v-225b3afe] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.46875rem;
+  background-color: #f8fafc;
+  border-radius: 0.625rem;
+}
+.room-left[data-v-225b3afe] {
+  display: flex;
+  align-items: center;
+  gap: 0.46875rem;
+}
+.room-icon[data-v-225b3afe] {
+  font-size: 0.75rem;
+}
+/* 房间图标颜色（复用首页快捷操作的颜色规范） */
+.room-icon-purple[data-v-225b3afe] {
+  color: #8b5cf6;
+}
+.room-icon-orange[data-v-225b3afe] {
+  color: #f97316;
+}
+.room-name[data-v-225b3afe] {
+  font-size: 0.75rem;
+  color: #334155;
+}
+.room-right[data-v-225b3afe] {
+  text-align: right;
+}
+.room-data[data-v-225b3afe] {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #1e293b;
+  display: block;
+}
+.room-status[data-v-225b3afe] {
+  font-size: 0.625rem;
+  display: block;
+}
+.room-status-green[data-v-225b3afe] {
+  color: #10b981;
+}
+
+/* 底部间距（完全复制首页mb-20，统一间距规范） */
+.mb-20[data-v-225b3afe] {
+  margin-bottom: 0.625rem;
+}
+
+/* 全局按钮重置（完全复制首页，统一按钮样式，清除默认边框） */
+uni-button[data-v-225b3afe] {
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+}
+uni-button[data-v-225b3afe]::after {
+  border: none !important;
+}
